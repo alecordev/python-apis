@@ -4,6 +4,7 @@ import uvicorn
 
 app = Starlette(debug=True)
 
+
 @app.route('/')
 async def homepage(request):
     return JSONResponse({'hello': 'world'})
